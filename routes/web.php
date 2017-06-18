@@ -28,8 +28,7 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect('/');
 });
 Route::get('/test', function() {
-    $book = App\Booking::find(4);
-    return view('emails.summary', compact('book'));
+    dd('Foo');
 });
 Route::get('/evenements', 'PageController@eventsShow')->name('events');
 /*

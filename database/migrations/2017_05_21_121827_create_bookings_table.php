@@ -13,6 +13,7 @@ class CreateBookingsTable extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('bookings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('gite');
@@ -33,6 +34,7 @@ class CreateBookingsTable extends Migration
             $table->longText('message')->nullable();
             $table->timestamps();
         });
+        */
     }
 
     /**
@@ -42,6 +44,6 @@ class CreateBookingsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('bookings');
+        //Schema::drop('bookings');
     }
 }
