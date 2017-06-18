@@ -22,7 +22,13 @@ host('163.172.151.178')
 
 
 // Tasks
-
+desc('Restart PHP-FPM service');
+task('php7.0-fpm:restart', function () {
+    // The user must have rights for restart service
+    // /etc/sudoers: username ALL=NOPASSWD:/bin/systemctl restart php-fpm.service
+    run('sudo systemctl restart php-fpm.service');
+});
+after('deploy:symlink', 'php-fpm:restart');
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
