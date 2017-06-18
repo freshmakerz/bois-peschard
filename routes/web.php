@@ -28,7 +28,7 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect('/');
 });
 Route::get('/test', function() {
-    dd('Foo');
+    dd(env('PRISMIC_URL'));
 });
 Route::get('/evenements', 'PageController@eventsShow')->name('events');
 /*
