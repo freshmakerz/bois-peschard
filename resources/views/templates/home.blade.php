@@ -39,11 +39,7 @@
                     </div>
                     <div class="medium-9 columns">
                         <h3>Détente</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        ut aliquip ex ea commodo consequat.</p>
+                        <p>Michelle Orhand, votre hôte vous accueille dans un cadre de pure quiétude, ou seuls les murmures de la nature se font écho.</p>
                     </div>
                 </div>
             </div>
@@ -56,11 +52,7 @@
                     </div>
                     <div class="medium-9 columns">
                         <h3>Confort</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        ut aliquip ex ea commodo consequat.</p>
+                        <p>Ce projet de gîtes longuement mûri alliant le charme des vieilles pierres et le standing d'aujourd'hui, a été pensé dans les moindres détails. Labellisé 5 épis Gites de france.</p>
                     </div>
                 </div>
             </div>
@@ -81,11 +73,7 @@
                     </div>
                     <div class="medium-9 columns">
                         <h3>Douceur de vivre</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        ut aliquip ex ea commodo consequat.</p>
+                        <p>Imaginez-vous le paradis sur terre... en Bretagne, près d'une forêt de légende, ou les sous-bois racontent des histoires...</p>
                     </div>
                 </div>
             </div>
