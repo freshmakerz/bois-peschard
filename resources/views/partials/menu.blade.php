@@ -57,7 +57,7 @@
         <ul class="dropdown"></ul>
     </li>
     <li class="{{ Request::route()->getName() === 'partenaires_show' ? 'active' : '' }} item-3">
-        <a href="/partenaires">Nos partenaires</a>
+        <a href="/nos-partenaires">Nos partenaires</a>
         <ul class="dropdown"></ul>
     </li>
     <li class="{{ Request::route()->getName() === 'contact_show' ? 'active' : '' }} item-4">

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('app')
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
@@ -9,62 +9,26 @@
         <div class="row">
             <div class="medium-12 columns main-content">
                 <div class="row">
+                    @foreach($partenaires->getGroup('partenaires.collection')->getArray() as $item)
                     <div class="medium-12 columns">
                         <div class="row">
                             <div class="medium-4 columns">
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings">
-                                    <img alt="" src="//placehold.it/324x216">
+                                <a href="{{ $item->getLink('url')->getUrl() }}" target=_blank>
+                                    @if($item->getImage('image'))
+                                        <img alt="{{ $item->getText('name') }}" src="{{ $item->getImage('image')->getUrl() }}">
+                                    @else
+                                        <img alt="{{ $item->getText('name') }}" src="//placehold.it/324x216?text={{ $item->getText('name') }}">
+                                    @endif
                                 </a>
                             </div>
                             <div class="medium-8 columns top-heavy">
-                                <h4><a href="/special/weddings">Partenaire 1</a></h4>
-                                <p>A wedding upon the elegant grounds and facilities at The Ashcroft is sure to set the stage for an event that you and your guests will never forget.  </p>
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings" class="button secondary tiny">More Details</a><hr>
+                                <h4><a href="{{ $item->getLink('url')->getUrl() }}" target=_blank>{{ $item->getText('name') }}</a></h4>
+                                {!! $item->getStructuredText('description')->asHtml() !!}
+                                <a href="{{ $item->getLink('url')->getUrl() }}" target=_blank class="button secondary tiny">Plus de détails</a><hr>
                             </div>
                         </div>
                     </div>
-                    <div class="medium-12 columns">
-                        <div class="row">
-                            <div class="medium-4 columns">
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings">
-                                    <img alt="" src="//placehold.it/324x216">
-                                </a>
-                            </div>
-                            <div class="medium-8 columns top-heavy">
-                                <h4><a href="/special/weddings">Partenaire 2</a></h4>
-                                <p>A wedding upon the elegant grounds and facilities at The Ashcroft is sure to set the stage for an event that you and your guests will never forget.  </p>
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings" class="button secondary tiny">More Details</a><hr>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="medium-12 columns">
-                        <div class="row">
-                            <div class="medium-4 columns">
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings">
-                                    <img alt="" src="//placehold.it/324x216">
-                                </a>
-                            </div>
-                            <div class="medium-8 columns top-heavy">
-                                <h4><a href="/special/weddings">Partenaire 3</a></h4>
-                                <p>A wedding upon the elegant grounds and facilities at The Ashcroft is sure to set the stage for an event that you and your guests will never forget.  </p>
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings" class="button secondary tiny">More Details</a><hr>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="medium-12 columns">
-                        <div class="row">
-                            <div class="medium-4 columns">
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings">
-                                    <img alt="" src="//placehold.it/324x216">
-                                </a>
-                            </div>
-                            <div class="medium-8 columns top-heavy">
-                                <h4><a href="/special/weddings">Partenaire 4</a></h4>
-                                <p>A wedding upon the elegant grounds and facilities at The Ashcroft is sure to set the stage for an event that you and your guests will never forget.  </p>
-                                <a href="http://uguru-bedandbreakfast-us.businesscatalyst.com/special/weddings" class="button secondary tiny">More Details</a><hr>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

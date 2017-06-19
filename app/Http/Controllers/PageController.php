@@ -166,4 +166,13 @@ class PageController extends Controller
         return back()->with('message_success', true);
     }
     
+    public function partenairesShow()
+    {
+        $partenaires = $this->api->query(
+            Predicates::at('document.type', 'partenaires'),
+            [ 'lang' => app()->getLocale() ]
+        )->getResults()[0];
+        return view('templates.partenaires', compact('partenaires'));
+    }
+    
 }
