@@ -12,8 +12,24 @@
                     <!--
                     <li><a href="https://www.gites-de-france-morbihan.com/" target="_blank">5 épis gites de France <img src="/_assets/img/logos/5epis.png" alt="5 épis gites de france"/></a></li>
                     -->
+                    <li style="margin-right: 50px;">
+                        <a data-dropdown="droplang" aria-controls="drop1" aria-expanded="false">
+                            @if(app()->getLocale() === 'fr-fr')
+                            <span class="flag-icon flag-icon-fr flag-icon-squared"></span>  Francais <i class="ion-android-arrow-dropdown"></i>
+                            @else
+                            <span class="flag-icon flag-icon-gb flag-icon-squared"></span>  English <i class="ion-android-arrow-dropdown"></i>
+                            @endif
+                        </a>
+                        <ul id="droplang" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                            @if(app()->getLocale() === 'fr-fr')
+                            <li><a href="{{ route('lang_switch', ['locale' => 'en-gb']) }}"><span class="flag-icon flag-icon-gb flag-icon-squared"></span> English</a></li>
+                            @else
+                            <li><a href="{{ route('lang_switch', ['locale' => 'fr-fr']) }}"><span class="flag-icon flag-icon-fr flag-icon-squared"></span> Francais</a></li>
+                            @endif
+                        </ul>
+                    </li>
                 </ul>
-                 <a href="https://www.gites-de-france-morbihan.com/" target="_blank">
+                 <a href="https://www.gites-de-france-morbihan.com/" target="_blank" title="Gites de France 5 épis">
                 	  <button class="ribbon twitter">
                 		  <img src="https://bois-peschard-freshmakerz.c9users.io/_assets/img/logos/gdf.png" alt="" width="40">
                 		  <div style="position: relative;z-index: 100;">
@@ -25,8 +41,6 @@
                 		  </div>
                 	  </button>
                   </a>
-
-                {{-- app()->getLocale() --}}
             </div>
         </div>
     </section>
@@ -44,11 +58,21 @@
 </header>
 
 <style type="text/css">
+    .utility-nav {
+        padding: 7px 0!important;
+    }
+    #droplang li {
+        float: none;
+        background: #3e4347;
+    }
+    #droplang:before {
+        border-color: transparent transparent #3e4347 transparent;
+    }
     .ribbon {
     border-radius: 0;
     position: absolute!important;
     right: 0;
-    top: -7px;
+    top: -9px;
     float: left;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -72,39 +96,39 @@
     }
 
 .ribbon i {
-        font-size: 9px;
+    font-size: 9px;
     float: left;
     color: #f9da07;
 }
 .ribbon:before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 25px solid #82bcc4;
-  border-right: 60px solid transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #82bcc4;
+    border-right: 60px solid transparent;
 }
 .ribbon:after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: 25px solid #82bcc4;
-  border-left: 60px solid transparent;
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #82bcc4;
+    border-left: 60px solid transparent;
 }
 
 .twitter {
-  background: #82bcc4;
-  color: #00526b;
+    background: #82bcc4;
+    color: #00526b;
 }
 .twitter:after {
-  border-top-color: #82bcc4;
+    border-top-color: #82bcc4;
 }
 .twitter:before {
-  border-top-color: #82bcc4;
+    border-top-color: #82bcc4;
 }
 </style>

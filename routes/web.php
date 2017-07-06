@@ -25,8 +25,8 @@ Route::post('/contact', 'PageController@contactDo')->name('contact_do');
 Route::get('lang/{locale}', function ($locale) {
     App::setLocale($locale);
     Session::put('locale', $locale);
-    return redirect('/');
-});
+    return back();
+})->name('lang_switch');
 Route::get('/test', function() {
     dd(env('PRISMIC_URL'));
 });

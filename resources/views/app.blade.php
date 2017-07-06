@@ -12,6 +12,7 @@
         <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Droid+Sans+Mono|Montserrat:400,700" />
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
         @show
         
