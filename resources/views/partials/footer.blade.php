@@ -8,6 +8,7 @@
         <div class="large-4 columns">
             <div class="social-icons">
                 <a class="fa fa-facebook" href="https://www.facebook.com/gitesboispeschard" target="_blank"></a>
+                <a class="fa fa-envelope-o" href="mailto:contact@gites-boispeschard.com" target="_blank"></a>
             </div>
         </div>
     </div>
@@ -16,3 +17,6 @@
     <h2>Informations légales</h2>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+<style>
+    .fa-envelope-o:before { font-size: 23px; content: "\f003"; font-size: 23px; position: relative; top: -3px; }
+</style>
