@@ -166,13 +166,13 @@ class PageController extends Controller
         return back()->with('message_success', true);
     }
     
-    public function partenairesShow()
+    public function livreOrShow()
     {
-        $partenaires = $this->api->query(
-            Predicates::at('document.type', 'partenaires'),
+        $gites = $this->api->query(
+            Predicates::at('document.type', 'gites'),
             [ 'lang' => app()->getLocale() ]
-        )->getResults()[0];
-        return view('templates.partenaires', compact('partenaires'));
+        )->getResults();
+        return view('templates.livre-or', compact('gites'));
     }
     
 }

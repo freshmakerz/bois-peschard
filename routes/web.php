@@ -18,7 +18,7 @@ Route::get('/la-region', 'PageController@regionShow')->name('region_show');
 Route::get('/les-loisirs', 'PageController@loisirsShow')->name('loisirs_show');
 Route::get('/tarifs', 'PageController@tarifsShow')->name('tarifs_show');
 Route::get('/reservation', 'PageController@reservationShow')->name('reservation_show');
-Route::get('/nos-partenaires', 'PageController@partenairesShow')->name('partenaires_show');
+Route::get('/livre-d-or', 'PageController@livreOrShow')->name('livre_or_show');
 Route::post('/reservation', 'PageController@reservationDo')->name('reservation_do');
 Route::get('/contact', 'PageController@contactShow')->name('contact_show');
 Route::post('/contact', 'PageController@contactDo')->name('contact_do');

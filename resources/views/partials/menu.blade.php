@@ -56,8 +56,8 @@
         <a href="/reservation">Réservation</a>
         <ul class="dropdown"></ul>
     </li>
-    <li class="{{ Request::route()->getName() === 'partenaires_show' ? 'active' : '' }} item-3">
-        <a href="/nos-partenaires">Nos partenaires</a>
+    <li class="{{ Request::route()->getName() === 'livre_or_show' ? 'active' : '' }} item-3">
+        <a href="/livre-d-or">Livre d'or</a>
         <ul class="dropdown"></ul>
     </li>
     <li class="{{ Request::route()->getName() === 'contact_show' ? 'active' : '' }} item-4">

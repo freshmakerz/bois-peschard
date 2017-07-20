@@ -17,9 +17,9 @@
         <div class="medium-6 columns">
             <div class="logos">
                 <div class="row">
-                    <div class="medium-4 columns"><!--<em>find us on</em><img alt="" src="/_assets/img/logos/booking.png" />--></div>
-                    <div class="medium-4 columns"><!--<em>find us on</em><img alt="" src="/_assets/img/logos/hotels.png" />--></div>
-                    <div class="medium-4 columns"><a href="https://www.tripadvisor.fr/VacationRentalReview-g8737712-d12358150-Les_gites_du_Bois_Peschard-Quelneuc_Vannes_Morbihan_Brittany.html" target="_blank"><em>Trouvez-nous sur</em><img alt="" src="/_assets/img/logos/tripadvisor.png" /></a></div>
+                    <div class="medium-4 columns"><a href="http://www.tourisme-handicaps.org" target="_blank" style="color: inherit;"><em>Tourisme & handicaps</em><img src="/_assets/img/logos/tourisme-handicap.jpg" alt="Tourisme & handicap" style="height:50px;border-radius:50px;"/></a></div>
+                    <div class="medium-4 columns"><a href="https://www.gites-de-france-morbihan.com/" target="_blank" style="color: inherit;"><em>Gites de France <br>5 épis</em><img alt="" src="/_assets/img/logos/gdf.png" style="height:50px"/></a></div>
+                    <div class="medium-4 columns"><a href="https://www.tripadvisor.fr/VacationRentalReview-g8737712-d12358150-Les_gites_du_Bois_Peschard-Quelneuc_Vannes_Morbihan_Brittany.html" target="_blank" style="color: inherit;"><em>Trouvez-nous <br>sur</em><img alt="" src="/_assets/img/logos/trip.jpg" style="height:50px;border-radius:50px;"/></a></div>
                 </div>
             </div>
         </div>

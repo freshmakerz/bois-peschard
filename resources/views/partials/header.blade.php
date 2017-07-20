@@ -1,4 +1,5 @@
 <header>
+    <div class="corner-ribbon top-left sticky red shadow">Nouveau site</div>
     <section class="utility-nav">
         <div class="row">
             <div class="medium-5 columns">
@@ -9,9 +10,6 @@
             </div>
             <div class="medium-7 columns">
                 <ul class="right">
-                    <!--
-                    <li><a href="https://www.gites-de-france-morbihan.com/" target="_blank">5 épis gites de France <img src="/_assets/img/logos/5epis.png" alt="5 épis gites de france"/></a></li>
-                    -->
                     <li style="margin-right: 50px;">
                         <a data-dropdown="droplang" aria-controls="drop1" aria-expanded="false">
                             @if(app()->getLocale() === 'fr-fr')
@@ -130,5 +128,22 @@
 }
 .twitter:before {
     border-top-color: #82bcc4;
+}
+.corner-ribbon{
+  width: 200px;
+  background: #82bcc4;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  font-size: 12px;
+}
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
 </style>

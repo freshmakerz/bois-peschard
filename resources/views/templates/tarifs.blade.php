@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="medium-12 columns text-center">
+                    <div class="medium-6 columns text-center">
                         <table cellspacing="0" cellpadding="0" border="0">
                             <tr>
                                 <td bgcolor="#7B8546"><img src="/_assets/img/cadeaux.png" width="150" height="124" style="border:0;margin:0;box-shadow:none;"></td>
@@ -95,6 +95,40 @@
                                 <br>
                                 Contactez  Michelle.</td>
                             </tr>
+                        </table>
+                    </div>
+                    <div class="medium-12 columns">
+                        <h5>Calendrier tarifaire 2017-2018</h5>
+                        <table class="table" style="border: solid 1px #ddd;">
+                            <thead>
+                                <tr>
+                                    <th style="border: solid 1px #ddd;text-align:center;">Basse saison</th>
+                                    <th style="border: solid 1px #ddd;text-align:center;">Moyenne saison</th>
+                                    <th style="border: solid 1px #ddd;text-align:center;">Haute saison</th>
+                                    <th style="border: solid 1px #ddd;text-align:center;">Très haute saison</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
+                                        04/01 au 01/04 <br>
+                                        01/10 au 20/10 <br>
+                                        06/11 au 22/12
+                                    </td>
+                                    <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
+                                        01/04 au 01/07 <br>
+                                        02/09 au 30/09 <br>
+                                        23/12 au 05/01/18 
+                                    </td>
+                                    <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
+                                        01/07 au 15/07 <br>
+                                        19/08 au 02/09
+                                    </td>
+                                    <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
+                                        15/07 au 19/08
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
