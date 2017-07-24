@@ -97,12 +97,14 @@
                         <div class="row">
                             <div class="medium-2 columns">
                                 <div class="event-date">
+                                    @if($event->getDate('evenements.date'))
                                     <span class="month">
                                         <?php $date = new DateTime($event->getDate('evenements.date')->asText()); echo $date->format('M'); ?>
                                     </span>
                                     <span class="day">
                                         {{ explode('-', $event->getDate('evenements.date')->asText())[2] }}
                                     </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="medium-10 columns">
