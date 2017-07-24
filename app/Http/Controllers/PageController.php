@@ -150,7 +150,10 @@ class PageController extends Controller
     
     public function eventsShow()
     {
-        $events = $this->getEvent();
+        $events = $this->api->query(
+            Predicates::at('document.type', 'evenements'),
+            [ 'lang' => app()->getLocale() ]
+        )->getResults();
         return view('templates.events', compact('events'));
     }
     
