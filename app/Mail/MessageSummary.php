@@ -31,7 +31,7 @@ class MessageSummary extends Mailable
     public function build()
     {
         return $this->from('message@gites-boispeschard.com', 'Gites du Bois Peschard')
-                ->subject('Nouveau message')
+                ->subject('Nouveau message N°'.$this->message->id)
                 ->view('emails.message')
                 ->with(['data' => $this->message]);
     }

@@ -32,7 +32,7 @@ class BookingSummary extends Mailable
     public function build()
     {   
         return $this->from('reservation@gites-boispeschard.com', 'Gites du Bois Peschard')
-                ->subject('Nouvelle demande de réservation')
+                ->subject('Nouvelle demande de réservation N°'.$this->book->id)
                 ->view('emails.summary');
     }
 }
