@@ -8,6 +8,7 @@ use Cache;
 use Mail;
 use App\Mail\BookingConfirmation;
 use App\Mail\BookingSummary;
+use App\Mail\MessageSummary;
 
 use Prismic\Api;
 use Prismic\Predicates;
@@ -166,6 +167,7 @@ class PageController extends Controller
             'message' => 'required',
         ]);
         $message = Message::create($request->all());
+        Mail::to('contact@gites-boispeschard.com')->send(new MessageSummary($message));
         return back()->with('message_success', true);
     }
     

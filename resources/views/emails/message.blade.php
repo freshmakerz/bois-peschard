@@ -462,7 +462,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;border-collapse:collapse ;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif ;text-align:center ;color:#191919 ;background-color:#FFFFFF;border:1px solid #CCCCCC;border-top:none;"
                   id="templateContent" class="text-align-center">
                   <tr>
-                    <td valign="top" id="contentHeader" class="sans-36-bold" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:36px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:36px;line-height:36px;font-weight:600;border-bottom:1px solid #CCCCCC;text-transform:uppercase;">réservation N°{{ $messsage->id }}</td>
+                    <td valign="top" id="contentHeader" class="sans-36-bold" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:36px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:36px;line-height:36px;font-weight:600;border-bottom:1px solid #CCCCCC;text-transform:uppercase;">message N°{{ $data->id }}</td>
                   </tr>
                   <tr>
                     <td valign="top" id="contentTable" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;padding-top:26px;padding-right:36px;padding-bottom:26px;padding-left:36px;border:1px solid #CCCCCC;">
@@ -471,39 +471,39 @@
                         <tr>
                           <td width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
                             class="contentItemColumn sans-14-bold">
-                              <span style="color: #999999 !important;">Nom :</span> {{ $messsage->last_name }}
+                              <span style="color: #999999 !important;">Nom :</span> {{ $data->last_name }}
                           </td>
                         </tr>
                         <tr>
                           <td width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
                             class="contentItemColumn sans-14-bold">
-                              <span style="color: #999999 !important;">Prénom :</span> {{ $messsage->first_name }}
+                              <span style="color: #999999 !important;">Prénom :</span> {{ $data->first_name }}
                           </td>
                         </tr>
                         <tr>
                           <td width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
                             class="contentItemColumn sans-14-bold">
-                              <span style="color: #999999 !important;">Email :</span> <a href="mailto:{{ $messsage->email }}">{{ $messsage->email }}</a>
+                              <span style="color: #999999 !important;">Email :</span> <a href="mailto:{{ $data->email }}">{{ $data->email }}</a>
                           </td>
                         </tr>
-                        @if($message->phone)
+                        @if($data->phone)
                         <tr>
                           <td width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
                             class="contentItemColumn sans-14-bold">
-                              <span style="color: #999999 !important;">Téléphone :</span> <a href="tel:{{ $messsage->phone }}">{{ $messsage->phone }}</a> 
+                              <span style="color: #999999 !important;">Téléphone :</span> <a href="tel:{{ $data->phone }}">{{ $data->phone }}</a> 
                           </td>
                         </tr>
                         @endif
                       </table>
                     </td>
                   </tr>
-                  @if($messsage->message)
+                  @if($data->message)
                   <tr>
                     <td align="left" valign="top" id="contentBody" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:29px 36px 36px;">
                       <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;border-collapse:collapse ;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif ;text-align:left ;color:#191919 ;">
                         <tr>
                           <td align="left" valign="top" class="sans-14-regular color-gray-dark" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:400;color:#666666 ;">
-                              {{ $messsage->message }}
+                              {{ $data->message }}
                           </td>
                         </tr>
                       </table>

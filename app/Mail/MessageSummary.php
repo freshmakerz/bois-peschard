@@ -6,8 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
-use App\Models\Message;
+use App\Message;
 
 class MessageSummary extends Mailable
 {
@@ -33,6 +32,7 @@ class MessageSummary extends Mailable
     {
         return $this->from('message@gites-boispeschard.com')
                 ->subject('Nouveau message')
-                ->view('emails.message');
+                ->view('emails.message')
+                ->with(['data' => $this->message]);
     }
 }

@@ -30,7 +30,7 @@ class BookingSummary extends Mailable
      * @return $this
      */
     public function build()
-    {
+    {   
         return $this->from('reservation@gites-boispeschard.com')
                 ->subject('Nouvelle demande de réservation')
                 ->view('emails.summary');
