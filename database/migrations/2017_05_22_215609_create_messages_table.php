@@ -13,7 +13,6 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
-        /*
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('first_name');
@@ -24,7 +23,6 @@ class CreateMessagesTable extends Migration
             $table->longText('message');
             $table->timestamps();
         });
-        */
     }
 
     /**
