@@ -142,13 +142,13 @@
                             @endforeach
                         </ul>
                         <div class="flex-video">
-                            <iframe src="https://calendar.google.com/calendar/embed?title=Gites&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=freshmakerz.fr_vvcuf485jrl5ds4hchhqr8dnfs%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=freshmakerz.fr_15kseuqptqc547m0mjr6ccgtms%40group.calendar.google.com&amp;color=%236B3304&amp;src=freshmakerz.fr_rqpiuhacjbjlivugb9p2hi8o30%40group.calendar.google.com&amp;color=%23B1440E&amp;src=freshmakerz.fr_e464b60mrughtd47oibe5jbhug%40group.calendar.google.com&amp;color=%235229A3&amp;src=freshmakerz.fr_pk5rm3vnk9uov0nmmbgiulfgns%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=700&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hfbs07d5pqo2inpfsbikeirabc%40group.calendar.google.com&amp;color=%23711616&amp;src=908b17fqhnvepeue8vu312827o%40group.calendar.google.com&amp;color=%23182C57&amp;src=lid4ep8ocq51m0nio7o87344g4%40group.calendar.google.com&amp;color=%23B1365F&amp;src=572j87tdbq73ktadt4gveltd6k%40group.calendar.google.com&amp;color=%235F6B02&amp;src=0beavb083icvi8lb75upjnuvbc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="700" frameborder="0" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="medium-12 columns">
-                        {!! $price->getStructuredText('mentions_legales')->asHtml() !!}
+                        {!! $tarifs->getStructuredText('tarifs.mentions_legales')->asHtml() !!}
                     </div>
                 </div>
             </div>
