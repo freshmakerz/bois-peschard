@@ -31,7 +31,7 @@
                 </ul>
                  <a href="https://www.gites-de-france-morbihan.com/" target="_blank" title="Gites de France 5 épis">
                 	  <button class="ribbon twitter">
-                		  <img src="https://bois-peschard-freshmakerz.c9users.io/_assets/img/logos/gdf.png" alt="" width="40">
+                		  <img src="/_assets/img/logos/gdf.png" alt="" width="40">
                 		  <div style="position: relative;z-index: 100;">
                 		      <i class="ion-ios-star"></i>
                 		      <i class="ion-ios-star"></i>

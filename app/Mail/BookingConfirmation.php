@@ -28,7 +28,7 @@ class BookingConfirmation extends Mailable
      */
     public function build()
     {
-        return $this->from('reservation@gites-boispeschard.com')
+        return $this->from('reservation@gites-boispeschard.com', 'Gites du Bois Peschard')
                 ->subject('Gites Bois Peschard - Demande de réservation')
                 ->view('emails.confirmation');
     }

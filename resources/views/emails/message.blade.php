@@ -448,7 +448,7 @@
                         class="text-align-center">
                         <tr>
                           <td valign="top" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;">
-                            <img src="https://bois-peschard-freshmakerz.c9users.io/_assets/img/logo.jpg" width="72" height="72" id="restaurantLogo" alt="The Aviary" style="-ms-interpolation-mode:bicubic;border:1px solid #CCCCCC;height:auto;line-height:100%;outline:none;text-decoration:none;border-radius:4px;">
+                            <img src="https://bois-peschard-freshmakerz.c9users.io/_assets/img/logo.jpg" width="72" height="72" id="restaurantLogo" alt="Gites du Bois Peschard" style="-ms-interpolation-mode:bicubic;border:1px solid #CCCCCC;height:auto;line-height:100%;outline:none;text-decoration:none;border-radius:4px;">
                           </td>
                         </tr>
                       </table>
