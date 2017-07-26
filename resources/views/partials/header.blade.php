@@ -18,6 +18,7 @@
                             <span class="flag-icon flag-icon-gb flag-icon-squared"></span>  English <i class="ion-android-arrow-dropdown"></i>
                             @endif
                         </a>
+                        <!--
                         <ul id="droplang" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
                             @if(app()->getLocale() === 'fr-fr')
                             <li><a href="{{ route('lang_switch', ['locale' => 'en-gb']) }}"><span class="flag-icon flag-icon-gb flag-icon-squared"></span> English</a></li>
@@ -25,6 +26,7 @@
                             <li><a href="{{ route('lang_switch', ['locale' => 'fr-fr']) }}"><span class="flag-icon flag-icon-fr flag-icon-squared"></span> Francais</a></li>
                             @endif
                         </ul>
+                        -->
                     </li>
                 </ul>
                  <a href="https://www.gites-de-france-morbihan.com/" target="_blank" title="Gites de France 5 épis">

@@ -148,24 +148,7 @@
                 </div>
                 <div class="row">
                     <div class="medium-12 columns">
-                        <h5>Ces tarifs comprennent :</h5>
-                        <ul>
-                            <li>draps de lit et lits faits</li>
-                            <li>serviettes de toilette, draps de bain, torchons, nappes</li>
-                            <li>lit bébé avec matelas alèze et drap housse + chaise haute + petit pot (sur demande préalable) + baignoire bébé</li>
-                            <li>bois pour la cheminée</li>
-                            <li>WiFi dans chaque gîte</li>
-                            <li>accès piscine toute l’année chauffée à 29°, sauna et salle de jeux</li>
-                            <li>local privatif par gîte avec ses VTT</li>
-                        </ul>
-                        <h5>Non compris dans les tarifs :</h5>
-                        <ul>
-                            <li>Couchage supplémentaire : 15 € par nuit et par personne</li>
-                            <li>Petit-déjeuner : 10 € par personne</li>
-                            <li>Forfait ménage : en fonction de la capacité du gite</li>
-                            <li>Animal de compagnie : 8 € par jour et par animal</li>
-                            <li>Taxe de séjour : 0,50 € par jour et par adulte ou enfants à partir de 13 ans</li>
-                        </ul>
+                        {!! $price->getStructuredText('mentions_legales')->asHtml() !!}
                     </div>
                 </div>
             </div>
