@@ -41,7 +41,7 @@
                                     <div class="rooms">
                                         @foreach($gites as $k => $v)
                                         <label class="gite-{{ $k }}">
-                                            <input type="radio" id="gite-{{ $v->getId() }}" name="gite" value="{{ $v->getText('gites.name') }}" {{ $selected_gite == ($k+1) ? 'checked="checked"': '' }} onchange="changeCalendar('cal-<?php echo $k; ?>')">
+                                            <input type="radio" id="gite-{{ $v->getId() }}" name="gite" value="{{ $v->getText('gites.name') }}" {{ $selected_gite == $v->getId() ? 'checked="checked"': '' }} onchange="changeCalendar('cal-<?php echo $k; ?>')">
                                             {{ $v->getText('gites.name') }}
                                         </label>
                                         @endforeach

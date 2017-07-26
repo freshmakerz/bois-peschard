@@ -123,7 +123,7 @@ class PageController extends Controller
             curl_close($curl);
             return json_decode($results);
         });
-        $selected_gite = $request->has('gite') ? $request->gite : 1;
+        $selected_gite = $request->has('gite') ? $request->gite : 'WQSJkyUAACYAR6Tj';
         return view('templates.reservation', compact('gites', 'countries', 'selected_gite'));
     }
     
