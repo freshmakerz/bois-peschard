@@ -9,7 +9,7 @@
                         <p>56910 Quelneuc</p>
                         <p>Morbihan - Bretagne</p>
                         <p><a href="mailto:contact@gites-boispeschard.com">contact@gites-boispeschard.com</a></p>
-                        <p><a href="mailto:contact@gites-boispeschard.com" style="color: #7e7673;">+(33) 6.1O.03.09.43</a></p>
+                        <p><a href="tel:+33610030943" style="color: #7e7673;">+(33) 6.10.03.09.43</a></p>
                     </div>
                 </div>
             </div>
