@@ -1,12 +1,12 @@
 @extends('app')
 
-@section('title', 'Les évènements de la région')
+@section('title', 'Les événements de la région')
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
-        ['name' => 'Evenements', 'url' => '/evenements']
+        ['name' => 'événements', 'url' => '/evenements']
     ]])
-    @include('partials.page-title', ['title' => 'Les évenements'])
+    @include('partials.page-title', ['title' => 'Les événements'])
     <section class="main">
         <div class="row">
             <div class="medium-12 columns">

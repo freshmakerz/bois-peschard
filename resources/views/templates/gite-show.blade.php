@@ -31,7 +31,7 @@
                                 <p>A partir de <b>{{ $gite->getNumber('gites.start-from')->getValue() }}</b>€/semaine (Basse saison)</p>
                                 <p style="margin: 1.50rem 0 0 0;">
                                     <a href="/tarifs" class="button secondary tiny">Tarifs</a>
-                                    <a href="/reservation" class="button tiny">Je réserve</a>
+                                    <a href="/reservation?gite={{ $gite->getId() }}" class="button tiny">Je réserve</a>
                                 </p>
                             </div>
                             <div class="medium-5 columns">

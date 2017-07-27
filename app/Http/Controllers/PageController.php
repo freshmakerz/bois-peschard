@@ -34,7 +34,7 @@ class PageController extends Controller
         $testimonials = [];
         $events = $this->api->query(
             Predicates::at('document.type', 'evenements'),
-            [ 'orderings' => '[my.evenements.date]' ]
+            [ 'orderings' => '[my.evenements.date]', 'pageSize' => 3 ]
         )->getResults();
         return view('templates.home', compact('testimonials', 'events'));
     }

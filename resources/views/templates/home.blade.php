@@ -86,11 +86,11 @@
         <div class="row">
             <div class="medium-6 columns">
                 <h1>Événements</h1>
-                <h6> au gite du bois peschard</h6>
+                <h6> aux gites du bois peschard</h6>
                 <p class="lead">
-                    Découvrez tous les évènements autour du pays de la Gacilly.
+                    Découvrez tous les événements autour du pays de la Gacilly.
                 </p>
-                <a href="/evenements" class="button secondary tiny">Voir tous les évenements</a>
+                <a href="/evenements" class="button secondary tiny">Voir tous les événements</a>
             </div>
             <div class="medium-6 columns">
                 @if($events)
