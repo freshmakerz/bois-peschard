@@ -24,6 +24,14 @@
             <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
         <![endif]-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-65580183-1', 'auto');
+            ga('send', 'pageview');
+        </script>
     </head>
     <body>
         <div id="app">
@@ -37,8 +45,8 @@
             <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAIwFlU8aS0YEm1CQCYvUQhEAcdeZgi3sE"></script>
             <script>
                 window.Laravel = <?php echo json_encode([
-                        'csrfToken' => csrf_token(),
-                    ]); ?>
+                    'csrfToken' => csrf_token(),
+                ]); ?>
             </script>
             <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
         @show
