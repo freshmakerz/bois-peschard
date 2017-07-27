@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Les évènements de la région')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Evenements', 'url' => '/evenements']

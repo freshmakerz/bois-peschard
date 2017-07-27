@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Piscine et loisirs à volonté')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Les loisirs', 'url' => '/loisirs']

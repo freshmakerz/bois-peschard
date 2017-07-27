@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Découvrez nos 5 Gites de charme')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Gites', 'url' => '/gites']

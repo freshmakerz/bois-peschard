@@ -1,38 +1,3 @@
-<style type="text/css">
-    .top-bar-section li {
-        margin: 0 7px!important;
-    }
-    .top-bar-section a {
-        padding: 0 10px 25px!important;
-        position: relative
-    }
-    .top-bar-section a:after {
-        content: '';
-        height: 2px;
-        width: 20px;
-        background: #fff;
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        margin-left: -10px;
-    }
-    .top-bar-section li.item-1.active a,
-    .top-bar-section li.item-1:hover a {
-        background: #54345a!important;
-    }
-    .top-bar-section li.item-2.active a,
-    .top-bar-section li.item-2:hover a {
-        background: #7c1262!important;
-    }
-    .top-bar-section li.item-3.active a,
-    .top-bar-section li.item-3:hover a {
-        background: #7e854c!important;
-    }
-    .top-bar-section li.item-4.active a,
-    .top-bar-section li.item-4:hover a {
-        background: #a685ac!important;
-    }
-</style>
 <ul>
     <li class="{{ Request::route()->getName() === 'home' ? 'active' : '' }} item-1">
         <a href="/">Accueil</a>
@@ -56,11 +21,11 @@
         <a href="/reservation">Réservation</a>
         <ul class="dropdown"></ul>
     </li>
-    <li class="{{ Request::route()->getName() === 'livre_or_show' ? 'active' : '' }} item-3">
+    <li class="{{ Request::route()->getName() === 'livre_or_show' ? 'active' : '' }} item-3 item-hidden">
         <a href="/livre-d-or">Livre d'or</a>
         <ul class="dropdown"></ul>
     </li>
-    <li class="{{ Request::route()->getName() === 'contact_show' ? 'active' : '' }} item-4">
+    <li class="{{ Request::route()->getName() === 'contact_show' ? 'active' : '' }} item-4 item-hidden">
         <a href="/contact">Contact</a>
         <ul class="dropdown"></ul>
     </li>

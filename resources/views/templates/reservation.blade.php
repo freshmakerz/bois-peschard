@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Réservez votre gite')
+
 @section('styles')
     @parent
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
@@ -53,6 +55,7 @@
                                         <option value="week-end">Week-end</option>
                                         <option value="mid-week-end">Mid week-end</option>
                                     </select>
+                                    <hr style="margin: 1.5rem 0;">
                                 </div>
                                 <div class="medium-8 columns">
                                     <div class="flex-video">

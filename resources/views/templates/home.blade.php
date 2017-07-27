@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Gites de charme à Quelneuc Morbihan Bretagne')
+
 @section('content')
     <!-- Home slider -->
     <section class="slider">

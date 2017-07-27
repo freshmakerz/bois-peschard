@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Nos clients parlent de nous')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Livre d\'or', 'url' => '/livre-d-or']
@@ -8,6 +10,7 @@
     <section class="main">
         <div class="row">
             <div class="medium-12 columns main-content">
+                <!--
                 <div class="row">
                     <div class="medium-12 columns text-center">
                         <p>
@@ -20,6 +23,7 @@
                         </p>
                     </div>
                 </div>
+                -->
                 @foreach($gites as $gite)
                 <div class="row">
                     <div class="medium-12 columns text-center">

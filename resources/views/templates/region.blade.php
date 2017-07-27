@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Au coeur du pays de La Gacilly')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'La région', 'url' => '/la-region']

@@ -1887,3 +1887,219 @@ h5 {
     content: "\f3d2"!important;
     right: 5px;
 }
+
+.utility-nav {
+    padding: 7px 0!important;
+}
+#droplang li {
+    float: none;
+    background: #3e4347;
+}
+#droplang:before {
+    border-color: transparent transparent #3e4347 transparent;
+}
+.ribbon {
+	border-radius: 0;
+	position: absolute!important;
+	right: 0;
+	top: -9px;
+	float: left;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	border: none;
+	background: #82bcc4;
+	width: 60px;
+	height: 50px;
+	position: relative;
+	color: white;
+	padding: 5px;
+	-webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+	-moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+	-ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+	-o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+}
+
+.ribbon i {
+	font-size: 9px;
+	float: left;
+	color: #f9da07;
+}
+.ribbon:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 25px solid #82bcc4;
+	border-right: 60px solid transparent;
+}
+.ribbon:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 25px solid #82bcc4;
+	border-left: 60px solid transparent;
+}
+
+.twitter {
+	background: #82bcc4;
+	color: #00526b;
+}
+.twitter:after {
+	border-top-color: #82bcc4;
+}
+.twitter:before {
+	border-top-color: #82bcc4;
+}
+.corner-ribbon{
+	width: 200px;
+	background: #82bcc4;
+	position: absolute;
+	top: 25px;
+	left: -50px;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 1px;
+	color: #f0f0f0;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	font-size: 12px;
+}
+.corner-ribbon.shadow{
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.top-bar-section li {
+    margin: 0 7px!important;
+}
+.top-bar-section a {
+    padding: 0 10px 25px!important;
+    position: relative
+}
+.top-bar-section a:after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -10px;
+}
+.top-bar-section li.item-1.active a,
+.top-bar-section li.item-1:hover a {
+    background: #54345a!important;
+}
+.top-bar-section li.item-2.active a,
+.top-bar-section li.item-2:hover a {
+    background: #7c1262!important;
+}
+.top-bar-section li.item-3.active a,
+.top-bar-section li.item-3:hover a {
+    background: #7e854c!important;
+}
+.top-bar-section li.item-4.active a,
+.top-bar-section li.item-4:hover a {
+    background: #a685ac!important;
+}
+    
+@media only screen and (max-width: 1200px) {
+	.corner-ribbon {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.utility-nav .left li:last-child {
+		display: none;
+	}
+	.top-bar .logo img {
+		height: 100px;
+	}
+	.contain-to-grid {
+	    padding: 25px 0 150px;
+	}
+	.top-bar-section {
+		top: 90px;
+	}
+	.top-bar-section li a {
+		padding: 0 5px 15px!important;
+		font-size: 12px!important;
+	}
+	.top-bar-section li a:after {
+	    bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.top-bar .item-hidden {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.utility-nav .left li:first-child {
+		display: none;
+	}
+	.top-bar{
+	    height: 95px;
+	}
+	.top-bar .item-hidden {
+		display: block;
+	}
+	.top-bar .name {
+		width: 72px;
+	}
+	.top-bar .logo img {
+		height: 80px;
+	}
+	.utility-nav .ribbon {
+		display: none;
+	}
+	.utility-nav .right li:first-child {
+		margin-right: 0!important;
+	}
+	.contain-to-grid {
+	    padding: 15px 0;
+	    height: 110px;
+	}
+	.top-bar-section {
+		top: 0px;
+	}
+	.slider .reservation {
+		margin-bottom: 0;
+	}
+	.top-bar .toggle-topbar.menu-icon {
+		margin: 0;
+	}
+	.top-bar-section li a {
+		padding: 10px 15px!important;
+	}
+	.top-bar-section ul {
+		margin-top: 50px;
+	}
+	.top-bar-section {
+		background: #fff;
+		padding-bottom: 15px;
+		border-bottom: solid 1px #cccccc;
+	}
+	.top-bar-section ul {
+	    border-top: solid 1px #cccccc;
+        padding-top: 15px;
+	}
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}

@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Contactez nous')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Contact', 'url' => '/contact']

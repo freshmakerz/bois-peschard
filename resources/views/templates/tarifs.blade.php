@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Nos tarifs et prestations')
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Tarifs', 'url' => '/tarifs'],
@@ -11,41 +13,43 @@
                 <div class="row">
                     <div class="medium-7 columns">
                         <h5>Tarifs semaine</h5>
-                        <table id="full_week" class="prices">
-                            <thead>
-                                <tr>
-                                    <td colspan="5" bgcolor="54345a" style="text-align:center;color:#fff;">
-                                        <span style="text-transform:uppercase;">Tarifs semaine</span>
-                                        <div style="font-size:10px;">(Du samedi 16h au samedi 10h)</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th width="145"></th>
-                                    <th>Basse saison</th>
-                                    <th>Moyenne saison</th>
-                                    <th>Haute saison</th>
-                                    <th>Très haute saison</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($tarifs->getGroup('tarifs.week-prices')->getArray() as $price)
-                                <tr>
-                                    <td>
-                                        <span style="text-transform:uppercase;">{{ $price->getText('gite') }}</span> <br>
-                                        <span style="font-size:11px">{{ $price->getText('capacity') }} Pers</span>
-                                    </td>
-                                    <td>{{ number_format($price->getNumber('low-season')->getValue(), 0, ", ", "") }} €</td>
-                                    <td>{{ number_format($price->getNumber('mid-season')->getValue(), 0, ", ", "") }} €</td>
-                                    <td>{{ number_format($price->getNumber('high-season')->getValue(), 0, ", ", "") }} €</td>
-                                    <td>{{ number_format($price->getNumber('very-high-season')->getValue(), 0, ", ", "") }} €</td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table id="full_week" class="prices">
+                                <thead>
+                                    <tr>
+                                        <td colspan="5" bgcolor="54345a" style="text-align:center;color:#fff;">
+                                            <span style="text-transform:uppercase;">Tarifs semaine</span>
+                                            <div style="font-size:10px;">(Du samedi 16h au samedi 10h)</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="145"></th>
+                                        <th>Basse saison</th>
+                                        <th>Moyenne saison</th>
+                                        <th>Haute saison</th>
+                                        <th>Très haute saison</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($tarifs->getGroup('tarifs.week-prices')->getArray() as $price)
+                                    <tr>
+                                        <td>
+                                            <span style="text-transform:uppercase;">{{ $price->getText('gite') }}</span> <br>
+                                            <span style="font-size:11px">{{ $price->getText('capacity') }} Pers</span>
+                                        </td>
+                                        <td>{{ number_format($price->getNumber('low-season')->getValue(), 0, ", ", "") }} €</td>
+                                        <td>{{ number_format($price->getNumber('mid-season')->getValue(), 0, ", ", "") }} €</td>
+                                        <td>{{ number_format($price->getNumber('high-season')->getValue(), 0, ", ", "") }} €</td>
+                                        <td>{{ number_format($price->getNumber('very-high-season')->getValue(), 0, ", ", "") }} €</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="medium-5 columns">
                         <h5>Tarifs week-end & mid week-end</h5>
-                        <table id="week-end" class="prices">
+                        <table id="week-end" class="prices responsive">
                             <thead>
                                 <tr>
                                     <td colspan="5" bgcolor="495A34" style="text-align:center;color:#fff;">
@@ -142,7 +146,7 @@
                             @endforeach
                         </ul>
                         <div class="flex-video">
-                            <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=700&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hfbs07d5pqo2inpfsbikeirabc%40group.calendar.google.com&amp;color=%23711616&amp;src=908b17fqhnvepeue8vu312827o%40group.calendar.google.com&amp;color=%23182C57&amp;src=lid4ep8ocq51m0nio7o87344g4%40group.calendar.google.com&amp;color=%23B1365F&amp;src=572j87tdbq73ktadt4gveltd6k%40group.calendar.google.com&amp;color=%235F6B02&amp;src=0beavb083icvi8lb75upjnuvbc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="700" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hfbs07d5pqo2inpfsbikeirabc%40group.calendar.google.com&amp;color=%23711616&amp;src=908b17fqhnvepeue8vu312827o%40group.calendar.google.com&amp;color=%23182C57&amp;src=lid4ep8ocq51m0nio7o87344g4%40group.calendar.google.com&amp;color=%23B1365F&amp;src=572j87tdbq73ktadt4gveltd6k%40group.calendar.google.com&amp;color=%235F6B02&amp;src=0beavb083icvi8lb75upjnuvbc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="700" frameborder="0" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>
