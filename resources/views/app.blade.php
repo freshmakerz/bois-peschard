@@ -7,7 +7,7 @@
         <title>√ Gites Bois Peschard - @yield('title')</title>
         <meta name="description" content="Bretagne">
         <meta name="keywords" content="Gites Bois Peschard Quelneuc Morbihan Bretagne Gites-de-charme">
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Styles -->
         @section('styles')
