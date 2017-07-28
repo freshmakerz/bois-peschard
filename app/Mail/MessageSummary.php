@@ -30,7 +30,7 @@ class MessageSummary extends Mailable
      */
     public function build()
     {
-        return $this->from('message@gites-boispeschard.com', 'Gites du Bois Peschard')
+        return $this->from($this->message->email, $this->message->first_name.' '.$this->message->last_name)
                 ->subject('Nouveau message N°'.$this->message->id)
                 ->view('emails.message')
                 ->with(['data' => $this->message]);

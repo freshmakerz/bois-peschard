@@ -97,35 +97,26 @@
                                         </div>
                                         <div class="medium-4 columns {{ $errors->has('adults') ? 'has-error' : '' }}">
                                             <label>Adultes</label>
-                                            <select class="cat_dropdown" id="Adults" name="adults" style="margin-bottom:0;">
-                                                <option value="0" selected="selected">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
+                                            <select class="cat_dropdown" id="Adults" name="adults" style="margin-bottom:0;" autocomplete="off">
+                                                @for ($i = 0; $i <= 20; $i++)
+                                                <option value="{{ $i }}" {{ $i == 0 ? 'selected' : '' }}>{{ $i }}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="medium-4 columns">
                                             <label>Enfants (0 à 3 ans)</label>
                                             <select class="cat_dropdown" id="Childrens_0_3" name="childrens_0_3" style="margin-bottom:0;">
-                                                <option value="0" selected="selected">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
+                                                @for ($i = 0; $i <= 10; $i++)
+                                                <option value="{{ $i }}" {{ $i == 0 ? 'selected' : '' }}>{{ $i }}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="medium-4 columns">
                                             <label>Enfants (4 à 12 ans)</label>
                                             <select class="cat_dropdown" id="Childrens_4_12" name="childrens_4_12" style="margin-bottom:0;">
-                                                <option value="0" selected="selected">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
+                                                @for ($i = 0; $i <= 10; $i++)
+                                                <option value="{{ $i }}" {{ $i == 0 ? 'selected' : '' }}>{{ $i }}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                     </fieldset>
