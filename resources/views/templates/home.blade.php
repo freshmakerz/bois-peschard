@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Gites de charme à Quelneuc Morbihan Bretagne')
+@section('title', 'Location de charme Vacances Bretagne - Les Gîtes du Bois Peschard')
+
+@section('description', "Gîtes de France 5 épis, les gîtes du Bois Peschard allient le charme au confort et à la douceur de vivre. Goûtez à la quiétude de ces lieux d'exception idéalement situés dans le Morbihan, à proximité de la forêt de Brocéliande et de la Gacilly")
 
 @section('content')
     <!-- Home slider -->
@@ -17,13 +19,13 @@
         </div>
         <div class="hero-slider">
             <div class="slide">
-                <img alt="" src="/_assets/img/slider/slider-1.jpg" />
+                <img alt="Location vacances Bretagne - Les Gîtes du Bois Peschard" src="/_assets/img/slider/slider-1.jpg" />
             </div>
             <div class="slide">
-                <img alt="" src="/_assets/img/slider/slider-2.jpg" />
+                <img alt="Gîte avec piscine Morbihan - Les Gîtes du Bois Peschard" src="/_assets/img/slider/slider-2.jpg" />
             </div>
             <div class="slide">
-                <img alt="" src="/_assets/img/slider/slider-3.jpg" />
+                <img alt="Gîtes Bretagne Morbihan - Les Gîtes du Bois Peschard" src="/_assets/img/slider/slider-3.jpg" />
             </div>
         </div>
     </section>
@@ -32,7 +34,7 @@
         <div class="medium-6 large-4 feature-item">
             <div class="feature-image">
                 <div class="arrow top"></div>
-                <img alt="" src="/_assets/img/ui/feature-1.jpg" />
+                <img alt="Location gîtes de charme Bretagne - Les Gîtes du Bois Peschard" src="/_assets/img/ui/feature-1.jpg" />
             </div>
             <div class="feature-item-details feature-1">
                 <div class="row">
@@ -60,13 +62,13 @@
             </div>
             <div class="feature-image">
                 <div class="arrow down"></div>
-                <img alt="" src="/_assets/img/ui/feature-3.jpg" />
+                <img alt="Location gîte avec terrasse - Les Gîtes du Bois Peschard" src="/_assets/img/ui/feature-3.jpg" />
             </div>
         </div>
         <div class="large-4 feature-item">
             <div class="feature-image">
                 <div class="arrow top top-2"></div>
-                <img alt="" src="/_assets/img/ui/feature-2.jpg" />
+                <img alt="Location gîte avec box chevaux - Les Gîtes du Bois Peschard" src="/_assets/img/ui/feature-2.jpg" />
             </div>
             <div class="feature-item-details feature-3">
                 <div class="row">

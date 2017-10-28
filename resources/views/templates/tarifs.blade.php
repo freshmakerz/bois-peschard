@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Nos tarifs et prestations')
+@section('title', 'Tarif Location Gîte Morbihan Bretagne - Les Gîtes du Bois Peschard ')
+
+@section('description', "Réservez votre semaine à partir de 390€ dans un gîte de charme tout confort niché entre Rennes et Vannes. Profitez du cadre de pure nature pour vous ressourcer. Les Gîtes du Bois Peschard sont labellisés 5 épis au registre des Gîtes de France ")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Au coeur du pays de La Gacilly')
+@section('title', 'Gîte Rural entre Rennes et Vannes - Les Gîtes du Bois Peschard')
+
+@section('description', "Les Gîtes du Bois Peschard vous acueillent dans un cadre de pure nature dans le Morbihan, entre Rennes et Vannes. Pour agrémenter votre séjour sur place nous vous proposons une piscine chauffée, un sauna, des boxes à chevaux, une salle de jeux, un étang pour la pêche...")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

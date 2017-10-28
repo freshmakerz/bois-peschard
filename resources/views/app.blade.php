@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <title>√ Gites Bois Peschard - @yield('title')</title>
-        <meta name="description" content="Bretagne">
+        <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')">
         <meta name="keywords" content="Gites Bois Peschard Quelneuc Morbihan Bretagne Gites-de-charme">
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="csrf-token" content="{{ csrf_token() }}">

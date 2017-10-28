@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', $gite->getText('gites.name').' - Gite '.$gite->getText('gites.capacity').' personnes')
+@section('title', $gite->getText('gites.title'))
+
+@section('description', $gite->getText('gites.description'))
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

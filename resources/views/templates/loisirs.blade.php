@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Piscine et loisirs à volonté')
+@section('title', 'Gîte Morbihan Bretagne avec Piscine - Les Gîtes du Bois Peschard')
+
+@section('description', "Idéalement situés entre Rennes et Vannes, les Gîtes du Bois Peschard vous permettent de profiter d'une large palette d'activités en pleine nature: piscine couverte et chauffée, sauna, salle de jeux, boxes à chevaux, parc à animaux, mise à disposition de vélos")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

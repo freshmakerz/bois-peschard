@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Les événements de la région')
+@section('title', 'Location Gîtes Morbihan évènements - Les Gîtes du Bois Peschard')
+
+@section('description', "Profitez pleinement des évènements organisés entre Vannes et Rennes en louant un gîte de charme idéalement situé")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

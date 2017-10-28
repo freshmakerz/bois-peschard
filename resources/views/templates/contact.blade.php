@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Contactez nous')
+@section('title', 'Contact Gîtes Morbihan - Les Gîtes du Bois Peschard')
+
+@section('description', "Une question? Contactez nous !")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [

@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Découvrez nos 5 Gites de charme')
+@section('title', 'Location Gîtes de France en Bretagne - Les Gîtes du Bois Peschard')
+
+@section('description', "Les Gîtes du Bois Peschard accueillent de 2 à 8 personnes au sein de 5 gîtes de charme avec piscine. Les gîtes comptent de 1 à 4 chambres afin de vous offrir un confort optimal lors de votre séjour en Bretagne")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
@@ -15,7 +17,7 @@
                     <div class="medium-6 columns left text-center">
                         <div class="room-item">
                             <a href="{{ route('gite_show', ['slug' => $gite->getUid()]) }}">
-                                <img alt="" src="{{ $gite->getImage('gites.thumbnail')->getUrl() }}">
+                                <img alt="{{ $gite->getImage('gites.thumbnail')->getAlt() }}" src="{{ $gite->getImage('gites.thumbnail')->getUrl() }}">
                             </a>
                             <h4>
                                 <a href="{{ route('gite_show', ['slug' => $gite->getUid()]) }}">{{ $gite->getText('gites.name') }}</a>

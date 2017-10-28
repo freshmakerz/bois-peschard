@@ -47,7 +47,7 @@
     <div class="contain-to-grid">
         <nav class="top-bar" data-topbar="data-topbar">
             <ul class="title-area">
-                <li class="name"> <a title="Gites du bois peschard" class="logo" href="/"><img alt="" src="/_assets/img/logo.jpg" /></a> </li>
+                <li class="name"> <a title="Gites du bois peschard" class="logo" href="/"><img alt="Gîtes Morbihan - Les Gîtes du Bois Peschard" src="/_assets/img/logo.jpg" /></a> </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
             </ul>
             <section class="top-bar-section">

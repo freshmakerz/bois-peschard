@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Réservez votre gite')
+@section('title', 'Réserver Location de Vacances Morbihan - Les Gîtes du Bois Peschard')
+
+@section('description', "Réservez dès maintenant votre semaine aux Gîtes du Bois Peschard! Profitez de la quiétude des lieux pour vous ressourcer et du charme des gîtes le Hêtre, le Chataîgner, le Chêne, le Frêne ou encore le Pin")
 
 @section('styles')
     @parent

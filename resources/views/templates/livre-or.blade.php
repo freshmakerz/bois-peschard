@@ -1,6 +1,8 @@
 @extends('app')
 
-@section('title', 'Nos clients parlent de nous')
+@section('title', "Avis de nos clients, Livre d'Or - Les Gîtes du Bois Peschard")
+
+@section('description', "Découvrez les avis de nos clients ainsi que les messages laissés dans notre livre d'or suite à leur séjour aux Gîtes du Bois Peschard")
 
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
