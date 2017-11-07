@@ -117,21 +117,22 @@
                             <tbody>
                                 <tr>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        04/01 au 01/04 <br>
-                                        01/10 au 20/10 <br>
-                                        06/11 au 22/12
+                                        06/01/18 au 07/04/18 <br>
+                                        29/09/18 au 20/10/18 <br>
+                                        03/11/18 au 22/12/18
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        01/04 au 01/07 <br>
-                                        02/09 au 30/09 <br>
-                                        23/12 au 05/01/18 
+                                        07/04/18 au 07/07/18 <br>
+                                        01/09/18 au 29/09/18 <br>
+                                        20/10/18 au 03/11/18 <br>
+                                        22/12/18 au 05/01/19
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        01/07 au 15/07 <br>
-                                        19/08 au 02/09
+                                        07/07/18 au 14/07/18 <br>
+                                        18/08/18 au 01/09/18
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        15/07 au 19/08
+                                        14/07/18 au 18/08/18
                                     </td>
                                 </tr>
                             </tbody>
