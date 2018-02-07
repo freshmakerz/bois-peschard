@@ -8,7 +8,7 @@
           <tr>
             <td style="padding:0 0 20px 0;border-bottom:1px solid #e9edee;">
               <a href="https://www.xero.com/us/" style="display:block; margin:0 auto;" target="_blank">
-                <img src="https://bois-peschard-freshmakerz.c9users.io/_assets/img/logo.jpg" height="100" alt="Bois Peschard logo" style="border: 0px;">
+                <img src="http://www.gites-boispeschard.com/_assets/img/logo.jpg" height="100" alt="Bois Peschard logo" style="border: 0px;">
               </a>
             </td>
           </tr>
