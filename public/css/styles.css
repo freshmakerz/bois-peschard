@@ -252,7 +252,7 @@ td.cartSummaryItem {
 	padding: 2px 0;
 }
 .contain-to-grid, .top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button), .contain-to-grid, .top-bar, .top-bar-section li:not(.has-form) a:not(.button), .top-bar.expanded .title-area {
-	background: none;
+	background: #fff;
 }
 .top-bar .toggle-topbar.menu-icon {
 	font-family: 'Montserrat', sans-serif;

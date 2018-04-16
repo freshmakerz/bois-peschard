@@ -4,7 +4,7 @@
         <div class="row">
             <div class="medium-5 columns">
                 <ul class="left">
-                    <li><a><span class="fa fa-phone"></span>+(33) 6 10 03 09 43</a></li>
+                    <li><a href="tel:+33610030943"><span class="fa fa-phone"></span>+(33) 6 10 03 09 43</a></li>
                     <li><a href="#map"><span class="fa fa-map-marker"></span>56910 Quelneuc, Morbihan - Bretagne</a></li>
                 </ul>
             </div>

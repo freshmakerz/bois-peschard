@@ -13,7 +13,7 @@
             <div class="medium-12 columns main-content">
                 <h2 class="text-center">Contactez-nous</h2>
                 <p class="lead text-center">
-                    <a href="tel:+3361O030943">+(33) 6.1O.03.09.43</a>
+                    <a href="tel:+33610030943">+(33) 6.10.03.09.43</a>
                     <br><br>
                     Une question ? N'hésitez pas à nous envoyer un message.
                 </p>
