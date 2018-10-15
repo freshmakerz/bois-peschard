@@ -39,13 +39,13 @@
                         <form name="bookingForm" method="POST" action="/reservation">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="row">
-                                <div class="medium-4 columns">
+                                <div class="medium-12 columns">
                                     <label>Votre gite</label>
                                     <br>
                                     <div class="rooms">
                                         @foreach($gites as $k => $v)
                                         <label class="gite-{{ $k }}">
-                                            <input type="radio" id="gite-{{ $v->getId() }}" name="gite" value="{{ $v->getText('gites.name') }}" {{ $selected_gite == $v->getId() ? 'checked="checked"': '' }} onchange="changeCalendar('cal-<?php echo $k; ?>')">
+                                            <input type="radio" id="gite-{{ $v->getId() }}" name="gite" value="{{ $v->getText('gites.name') }}" {{ $selected_gite == $v->getId() ? 'checked="checked"': '' }}>
                                             {{ $v->getText('gites.name') }}
                                         </label>
                                         @endforeach
@@ -58,17 +58,6 @@
                                         <option value="mid-week-end">Mid week-end</option>
                                     </select>
                                     <hr style="margin: 1.5rem 0;">
-                                </div>
-                                <div class="medium-8 columns">
-                                    <div class="flex-video">
-                                        <div class="calendars">
-                                            @foreach($gites as $k => $v)
-                                            <div id="cal-{{ $k }}" class="cal" style="{{ $loop->first ? 'display:block;' : 'display:none;' }}">
-                                                <iframe id="calendar" src="{{ $v->getText('gites.calendar-url') }}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                                            </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             @if (count($errors) > 0)

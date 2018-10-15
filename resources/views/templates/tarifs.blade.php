@@ -142,15 +142,10 @@
                 <div class="row">
                     <div class="medium-12 columns">
                         <h5>Disponibilité des gites</h5>
-                        <p>Pour connaitre la disonibilité des gites naviguez sur le calendrier ci-dessous et aidez-vous du code couleur de chaque gite</p>
-                        <ul class="inline-list">
-                            @foreach($gites as $gite)
-                            <li>{{ $gite->getText('gites.name') }} <span class="gite-id" style="height:15px;width:15px;display: inline-block;border-radius:50%;position:relative;top:3px;background-color:{{ $gite->getColor('gites.color-code')->getHexValue() }}"></span></li>
-                            @endforeach
-                        </ul>
-                        <div class="flex-video">
-                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hfbs07d5pqo2inpfsbikeirabc%40group.calendar.google.com&amp;color=%23711616&amp;src=908b17fqhnvepeue8vu312827o%40group.calendar.google.com&amp;color=%23182C57&amp;src=lid4ep8ocq51m0nio7o87344g4%40group.calendar.google.com&amp;color=%23B1365F&amp;src=572j87tdbq73ktadt4gveltd6k%40group.calendar.google.com&amp;color=%235F6B02&amp;src=0beavb083icvi8lb75upjnuvbc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="700" frameborder="0" scrolling="no"></iframe>
-                        </div>
+                        <p>Pour connaitre la disonibilité des gites cliquez sur le boutton ci-dessous</p>
+                        <a href="https://www.dropbox.com/s/53vh5uxmy2odtrp/Planning%20Site%20Internet.pdf?dl=1" target="_blank" class="button primary tiny">
+                            Voir la disonibilité des gites
+                        </a>
                     </div>
                 </div>
                 <div class="row">
