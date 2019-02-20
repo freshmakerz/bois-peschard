@@ -142,9 +142,9 @@
                 <div class="row">
                     <div class="medium-12 columns">
                         <h5>Disponibilité des gites</h5>
-                        <p>Pour connaitre la disonibilité des gites cliquez sur le boutton ci-dessous</p>
+                        <p>Pour connaitre la disponibilité des gites cliquez sur le bouton ci-dessous</p>
                         <a href="https://www.dropbox.com/s/mqgvpgl5lcr8so8/planning-disponibilite-gite.pdf?dl=0" target="_blank" class="button primary tiny">
-                            Voir la disonibilité des gites
+                            Voir la disponibilité des gites
                         </a>
                     </div>
                 </div>
