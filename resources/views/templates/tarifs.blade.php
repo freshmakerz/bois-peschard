@@ -104,7 +104,7 @@
                         </table>
                     </div>
                     <div class="medium-12 columns">
-                        <h5>Calendrier tarifaire 2017-2018</h5>
+                        <h5>Calendrier tarifaire 2019-2020</h5>
                         <table class="table" style="border: solid 1px #ddd;">
                             <thead>
                                 <tr>
@@ -117,22 +117,22 @@
                             <tbody>
                                 <tr>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        06/01/18 au 07/04/18 <br>
-                                        29/09/18 au 20/10/18 <br>
-                                        03/11/18 au 22/12/18
+                                        06/01/19 au 03/04/20 <br>
+                                        30/09/19 au 17/10/20 <br>
+                                        04/11/19 au 23/12/20
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        07/04/18 au 07/07/18 <br>
-                                        01/09/18 au 29/09/18 <br>
-                                        20/10/18 au 03/11/18 <br>
-                                        22/12/18 au 05/01/19
+                                        03/04/19 au 30/06/19 <br>
+                                        01/09/18 au 30/09/20 <br>
+                                        17/10/19 au 04/11/20 <br>
+                                        19/12/19 au 02/01/20
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        07/07/18 au 14/07/18 <br>
-                                        18/08/18 au 01/09/18
+                                        01/07/19 au 11/07/20 <br>
+                                        15/08/19 au 29/08/20
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        14/07/18 au 18/08/18
+                                        11/07/19 au 15/08/20
                                     </td>
                                 </tr>
                             </tbody>
