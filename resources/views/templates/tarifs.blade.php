@@ -117,13 +117,13 @@
                             <tbody>
                                 <tr>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        06/01/19 au 03/04/20 <br>
-                                        30/09/19 au 17/10/20 <br>
-                                        04/11/19 au 23/12/20
+                                        06/01/20 au 03/04/20 <br>
+                                        30/09/20 au 17/10/20 <br>
+                                        04/11/20 au 23/12/20
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        03/04/19 au 30/06/19 <br>
-                                        01/09/18 au 30/09/20 <br>
+                                        03/04/20 au 30/06/20 <br>
+                                        01/09/19 au 30/09/20 <br>
                                         17/10/19 au 04/11/20 <br>
                                         19/12/19 au 02/01/20
                                     </td>
