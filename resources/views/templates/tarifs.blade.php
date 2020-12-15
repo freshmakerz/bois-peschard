@@ -104,7 +104,7 @@
                         </table>
                     </div>
                     <div class="medium-12 columns">
-                        <h5>Calendrier tarifaire 2019-2020</h5>
+                        <h5>Calendrier tarifaire 2021</h5>
                         <table class="table" style="border: solid 1px #ddd;">
                             <thead>
                                 <tr>
