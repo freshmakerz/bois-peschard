@@ -3,7 +3,7 @@
 <footer>
     <div class="row">
         <div class="large-8 columns">
-            <div class="copy"><a href="/">Accueil</a><a href="#" data-reveal-id="mentions-legales">Mentions légales</a> &copy; 2017, Bois Peschard</div>
+            <div class="copy"><a href="/">Accueil</a><a href="#" data-reveal-id="mentions-legales">Mentions légales</a> &copy; 2020-2021, Bois Peschard</div>
         </div>
         <div class="large-4 columns">
             <div class="social-icons">
