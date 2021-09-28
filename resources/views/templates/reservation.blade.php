@@ -137,7 +137,7 @@
                                             <label>Pays</label>
                                             <select name="country" id="country" class="cat_dropdown">
                                                 @foreach($countries as $country)
-                                                    <option {{ $country->name === 'France' ? 'selected' : '' }}>{{ $country->name }}</option>
+                                                    <option {{ $country['name'] === 'France' ? 'selected' : '' }}>{{ $country['name'] }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

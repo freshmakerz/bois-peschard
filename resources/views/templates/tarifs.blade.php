@@ -4,6 +4,18 @@
 
 @section('description', "Réservez votre semaine à partir de 390€ dans un gîte de charme tout confort niché entre Rennes et Vannes. Profitez du cadre de pure nature pour vous ressourcer. Les Gîtes du Bois Peschard sont labellisés 5 épis au registre des Gîtes de France ")
 
+@section('styles')
+@parent
+<style>
+    #table-schedule td p {
+        font-size: 11px;
+        color: black;
+        text-align: center;
+        margin: 0;
+    }
+</style>
+@endsection
+
 @section('content')
     @include('partials.breadcrumbs', ['breadcrumbs' => [
         ['name' => 'Tarifs', 'url' => '/tarifs'],
@@ -86,8 +98,8 @@
                             * Gîtes labellisés tourisme & handicap
                         </p>
                         <p>
-                            Mid-week 4 nuits : arrivée lundi 12 h 00 et départ vendredi 12 h 00<br>
-                            Week-end 2 nuits : arrivée vendredi 16 h 00 et départ dimanche 16 h 00
+                            Mid-week 4 nuits : arrivée lundi 10h00 et départ vendredi 10h00<br>
+                            Week-end 2 nuits : arrivée vendredi 16h00 et départ dimanche 16h00
                         </p>
                     </div>
                 </div>
@@ -104,8 +116,8 @@
                         </table>
                     </div>
                     <div class="medium-12 columns">
-                        <h5>Calendrier tarifaire 2021</h5>
-                        <table class="table" style="border: solid 1px #ddd;">
+                        <h5>Calendrier tarifaire {{ Carbon\Carbon::now()->year + 1 }}</h5>
+                        <table id="table-schedule" class="table" style="border: solid 1px #ddd;">
                             <thead>
                                 <tr>
                                     <th style="border: solid 1px #ddd;text-align:center;">Basse saison</th>
@@ -115,26 +127,22 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($tarifs->getGroup('tarifs.price-schedule')->getArray() as $schedule)
                                 <tr>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        04/01/21 au 03/04/21 <br>
-                                        02/10/21 au 16/10/21 <br>
-                                        30/10/21 au 18/12/21
+                                        {!! $schedule->getStructuredText('low-season')->asHtml() !!}
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        05/04/21 au 03/07/21 <br>
-                                        28/08/21 au 02/10/21 <br>
-                                        16/10/21 au 30/10/21 <br>
-                                        18/12/21 au 02/01/21
+                                        {!! $schedule->getStructuredText('mid-season')->asHtml() !!}
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        03/07/21 au 17/07/21 <br>
-                                        14/08/21 au 28/08/21
+                                        {!! $schedule->getStructuredText('high-season')->asHtml() !!}
                                     </td>
                                     <td style="font-size: 11px;width:25%;border: solid 1px #ddd;text-align:center;">
-                                        17/07/21 au 14/08/21
+                                        {!! $schedule->getStructuredText('very-high-season')->asHtml() !!}
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

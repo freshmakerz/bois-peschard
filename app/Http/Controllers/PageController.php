@@ -108,21 +108,7 @@ class PageController extends Controller
             Predicates::at('document.type', 'gites'),
             [ 'lang' => app()->getLocale() ]
         )->getResults();
-        $countries = Cache::remember('countries', 2440, function () {
-            $curl = curl_init();
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://restcountries.eu/rest/v2/all",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "GET",
-            ));
-            $results = curl_exec($curl);
-            curl_close($curl);
-            return json_decode($results);
-        });
+        $countries = config('countries');
         $selected_gite = $request->has('gite') ? $request->gite : 'WQSJkyUAACYAR6Tj';
         return view('templates.reservation', compact('gites', 'countries', 'selected_gite'));
     }
